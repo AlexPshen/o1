@@ -26,13 +26,13 @@ int main(int argc, char *argv[]){
     his_bud.read(fr);
     std::cout << "Object2" << '\n';
     his_bud.print(std::cout);
-    bool tmp1 = my_bud.com(his_bud, std::cout);
+    bool tmp1 = my_bud.com(his_bud);
     if(tmp1){
         std::cout << "Object1 == Object2 - Yes" << '\n' << '\n';
     } else{
         std::cout << "Object1 == Object2 - No" << '\n' << '\n';
     }
-    bool tmp2 = my_bud.no(his_bud, std::cout);
+    bool tmp2 = my_bud.no(his_bud);
     if(tmp2){
         std::cout << "Object1 != Object2 - Yes" << '\n' << '\n';
     } else{
